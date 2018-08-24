@@ -230,7 +230,7 @@ a:hover { text-decoration: none; }
 
 .card { border: 1px solid black; box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.5); }
 
-.margin-bottom-0 { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: none; }
+.margin-bottom-none { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: none; }
 
 .margin-top-0 { margin-top: 0; }
 .margin-top-0 .card { border-top-left-radius: 0; border-top-right-radius: 0; border-top: none; }
@@ -250,3 +250,5 @@ footer .container { margin-top: 0; }
 nav .container { margin-top: 0; margin-bottom: 0; }
 
 .img-about { max-width: 200px; max-height: 200px; margin-right: 10px; float: left; }
+
+.border-none { border: none; box-shadow: none; background-color: transparent; }
