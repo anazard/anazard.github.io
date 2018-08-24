@@ -326,8 +326,7 @@ a:hover {
   background-repeat: repeat-x; }
 
 .card {
-  border: none;
-  margin-bottom: 35px; }
+  border: none; }
 
 .card-title {
   min-height: 2em; }
@@ -349,3 +348,10 @@ a:hover {
   background-attachment: fixed;
   height: 250px;
   margin: 20px 0; }
+
+footer {
+  border-top: 1px solid grey;
+  padding: 20px 0;
+  margin-top: 50px; }
+  footer .container {
+    margin-top: 0; }
