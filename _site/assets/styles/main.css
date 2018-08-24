@@ -2,9 +2,15 @@
 .highlight .hll {
   background-color: #49483e; }
 
-.highlight {
+.highlighter-rouge {
+  margin-bottom: 16px; }
+
+.highlight, pre {
   background: #272822;
-  color: #f8f8f2; }
+  color: #f8f8f2;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 0; }
 
 .highlight .c {
   color: #75715e; }
@@ -279,6 +285,12 @@
   color: #ae81ff; }
 
 /* Literal.Number.Integer.Long */
+a:hover {
+  text-decoration: none; }
+
+.container {
+  margin-top: 20px; }
+
 .landing > h1 {
   font-family: 'Press Start 2P', cursive;
   text-shadow: 5px 5px 5px #000;
@@ -299,11 +311,9 @@
   border-radius: 0;
   text-align: center;
   background-position: bottom;
-  padding: 100px 0 0 0;
+  padding: 50px 0 0 0;
   position: relative;
-  top: -56px;
-  z-index: 1;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   background-position-x: left; }
 
 .landing::after {
@@ -331,3 +341,11 @@
 
 .btn {
   width: 100%; }
+
+.post {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 250px;
+  margin: 20px 0; }

@@ -1,12 +1,12 @@
 ---
 path: "/firstlk"
 comments: true
-layout: base
+layout: post
 title: "[GIT] Handy tricks"
 tags: [git, tricks, development]
-img: 'git.png'
+thumbnail: 'git.png'
 ---
-
+dkjash
 What's up, everyone? Happy new year, before I forget! :) Long time no post, eh? I've been on a trip to Brazil for the holidays, but that's not the subject today. Let's get on to a couple handy git tricks I used quite often these days.<!--more-->
 
 ### Reverting the current branch to a specific commit

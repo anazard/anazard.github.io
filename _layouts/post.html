@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<div class="container">
+    <h1>{{page.title}}</h1>
+    <strong>
+        {{ page.date | date: "%B %e, %Y" }} -
+        <a href="./about">{% if page.author %} {{page.author}}{% else %}@anazard{% endif %}</a>
+    </strong>
+</div>
+
+
+<div class="container-fluid post" style="background-image: url(./assets/images/posts/{{page.cover}})"></div>
+
+<div class="container">
+    {{content}}
+</div>
