@@ -19,13 +19,13 @@ tags: [nofooter]
                     >
                     </div>
                     <div class="card-body">
-                        <a href="{{post.url}}">
+                        <a href="{{ site.baseurl }}{{post.url}}">
                             <h5 class="card-title">{{ post.title }}</h5>
                         </a>
                         <p class="card-text">
                             {{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 20 }}
                         </p>
-                        <a href="{{ site.baseurl }}/{{post.url}}" class="btn btn-outline-primary">
+                        <a href="{{ site.baseurl }}{{post.url}}" class="btn btn-outline-primary">
                             <i class="fa fa-terminal" aria-hidden="true"></i>
                             Go to post
                         </a>

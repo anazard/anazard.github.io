@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "[PHP] Migrations in Laravel"
 tags: [programming, php, laravel, back-end, technology, migrations, sql, databases]
-thumbnail: ['laravel.png']
+thumbnail: 'laravel.png'
 cover: 'command-line.png'
 ---
 

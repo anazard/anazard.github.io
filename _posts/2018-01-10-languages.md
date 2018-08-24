@@ -1,0 +1,28 @@
+---
+layout: post
+comments: true
+title: "[Languages] My Personal Approach"
+tags: [programming, php, laravel, back-end, technology, migrations, sql, databases]
+thumbnail: 'chocolatine.png'
+cover: 'montreal.jpg'
+---
+
+Hey there! Long time no see, eh? Life has been quite tough to me since the last post I wrote, but here we are with some new thoughts and ideas to share.
+Today's topic is **learning new languages**. If you know me in the real life or follow me on social networks, you might know I speak English and somewhat broken French. I honestly never really cared much about English in highschool - to me, it had always been the course during which you can chat with friends and still pass doing the bare minimum effort. The tests were quite easy, so I will definitely not take credits for being able to get decent grades. A proof of that would be the simple fact I'd be screwed if a professor asked me to say something in English on the fly, no matter how simple it'd have to be.
+
+I was first introduced to actual English during my first trip abroad. I spent a month in the wonderful California, and often caught myself not really knowing how to get away with relatively simple situations. That was absolutely frustrating, so I came back home willing to put some effort into learning that thing from scratch (I'll tell you how in a second). Approximately one year later, I'd been accepted into the Science Without Borders program, which granted me 18 months of English and Computer Science studies in Toronto. Needless to say this was the experience that made my English skills take off, right? I'm not even saying I got 100% fluent, especially in the first couple months, but I could definitely see a huge improvement by the end of the journey. I could manage to live fully immersed by English, and I must say that makes me quite proud of myself!
+I had the desire to learn French since my aunt travelled to Paris in 2008 (I guess?) and showed me photos of landscapes etc. I visited Paris myself too, and those 4 days (wtf spends only 4 days in another continent?!) were enough to put me down another time for not being able to communicate with natives. Yeah, I spoke English at the time (2015), but still, I'd have loved to be able to speak French in France. Did not happen.
+
+I'm not going to get into details, but I ended up landing in Montreal almost a year after going back home from Toronto. Montreal is a very particular city when it comes to languages: let's say over half of its inhabitants speaks French, other half speaks English, and a huge percentage of people is perfectly bilingue, and add this to the different accents and some other foreign languages that are also super common, and voila.
+
+So here's how things happened: I arrived in Fev 2017, it was cold, I had no friends and did not have much to do besides going to work. I went look for French courses on my first week and started it 1 week later. I was excited and took it very seriously. These are some of the things I did in order to make the most out of it:
+
+- I consider grammar absolutely essential and think it is the starting point to learning a language. I always have a good grammar book by my side. The tought that grammar is not that important and can be learned later on in the process is not appealing to me, although some professors or polygloths might disagree with that. I've already spent hours and long afternoons conjugating verbs at a coffee shop, and assure you it's not as boring as it might sound like. It's the kind of thing you must memorize, unfortunately... especially when it comes to irregular verbs and all those special cases we're sick of hearing about.
+
+- There should be some kind of motivation behind your willingness to learn the language. That wasn't 100% my case with English, but was for sure with French, as I said above. It helps a whole lot and speeds up your progression.
+
+- My weaker skill in any language always happens to be the listening, even in Portuguese (LOL). I don't really know what goes on here, most people say they're scared of speaking and can understand a few sentences with little exposure to the language, but this is not my case at all. I had inumerous ashaming situations in which I simply couldn't understand someone else, but I learned how to manage the frustration and that asking them to repeat or say it differently isn't that bad. Podcasts have always been my best friend, and I've prepared a good list for those of you who are also learning French!
+
+- I try to integrate the new language in my daily life in a way I just can't do essential things without forcing myself to actively think of I'm doing. This includes changing the language of my phone/computer, doing things like ask for information when necessary, ordering food, solving problems all in French, and very importantly, without considering I can fall back to English. This makes a huge difference because the goal here is to escape from my comfort zone as much as possible. I frequently get nervous thinking I wouldn't be able to handle more complex situations, and sometimes that's the case. However, most times it works just fine and that makes me the happiest person in the world for a couple minutes, so it's totally worth at least trying.
+
+I guess this sums up pretty decently the way I do to learn a new language, and hope this little guide might be helpful to you too. I know this task gets way more difficult when you're stuck in your home town without being able to travel and get immersed in a new language/culture, but you can still make some surprisingly good progress on your own, if that's what you really want and is determined to accomplished. Feel free to leave your methods on the comments below and until next time! :)

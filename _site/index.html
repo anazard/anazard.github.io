@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>anazard.me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="./">
+    <!-- <base href="./"> -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Posts</a>
+                <a class="nav-item nav-link" href="/blog-proto/">Home <span class="sr-only">(current)</span></a>
+                <!-- <a class="nav-item nav-link" href="/blog-proto/about">Posts</a> -->
                 <a class="nav-item nav-link" href="/blog-proto/about">About</a>
                 </div>
             </div>
@@ -42,17 +44,39 @@
                 <div class="card">
                     <div 
                         class="card-img-wrapper"
+                        style="background-image: url(./assets/images/posts/chocolatine.png)"
+                    >
+                    </div>
+                    <div class="card-body">
+                        <a href="/blog-proto/languages.html">
+                            <h5 class="card-title">[Languages] My Personal Approach</h5>
+                        </a>
+                        <p class="card-text">
+                            Hey there! Long time no see, eh? Life has been quite tough to me since the last post I wrote,...
+                        </p>
+                        <a href="/blog-proto/languages.html" class="btn btn-outline-primary">
+                            <i class="fa fa-terminal" aria-hidden="true"></i>
+                            Go to post
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card">
+                    <div 
+                        class="card-img-wrapper"
                         style="background-image: url(./assets/images/posts/laravel.png)"
                     >
                     </div>
                     <div class="card-body">
-                        <a href="/git-handy-tricks.html">
+                        <a href="/blog-proto/git-handy-tricks.html">
                             <h5 class="card-title">[PHP] Migrations in Laravel</h5>
                         </a>
                         <p class="card-text">
                             Migrations have the role of tracking all changes we need to make in our databases since the moment of its...
                         </p>
-                        <a href="/blog-proto//git-handy-tricks.html" class="btn btn-outline-primary">
+                        <a href="/blog-proto/git-handy-tricks.html" class="btn btn-outline-primary">
                             <i class="fa fa-terminal" aria-hidden="true"></i>
                             Go to post
                         </a>
@@ -68,35 +92,13 @@
                     >
                     </div>
                     <div class="card-body">
-                        <a href="/handy-tricks.html">
-                            <h5 class="card-title">[GIT] Handy tricks</h5>
-                        </a>
-                        <p class="card-text">
-                            dkjash What’s up, everyone? Happy new year, before I forget! :) Long time no post, eh? I’ve been on a...
-                        </p>
-                        <a href="/blog-proto//handy-tricks.html" class="btn btn-outline-primary">
-                            <i class="fa fa-terminal" aria-hidden="true"></i>
-                            Go to post
-                        </a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col">
-                <div class="card">
-                    <div 
-                        class="card-img-wrapper"
-                        style="background-image: url(./assets/images/posts/git.png)"
-                    >
-                    </div>
-                    <div class="card-body">
-                        <a href="/djaskd.html">
+                        <a href="/blog-proto/handy-tricks.html">
                             <h5 class="card-title">[GIT] Handy tricks</h5>
                         </a>
                         <p class="card-text">
                             What’s up, everyone? Happy new year, before I forget! :) Long time no post, eh? I’ve been on a trip...
                         </p>
-                        <a href="/blog-proto//djaskd.html" class="btn btn-outline-primary">
+                        <a href="/blog-proto/handy-tricks.html" class="btn btn-outline-primary">
                             <i class="fa fa-terminal" aria-hidden="true"></i>
                             Go to post
                         </a>
@@ -107,9 +109,11 @@
     </div>
 </div>
 
-    <footer>
+    <footer class="navbar-dark bg-dark">
     <div class="container">
-        anazard.me
+        <span class="navbar-text">
+            anazard.me
+        </span>
     </div>
 </footer>
 

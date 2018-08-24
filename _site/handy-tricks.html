@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>anazard.me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="./">
+    <!-- <base href="./"> -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Posts</a>
+                <a class="nav-item nav-link" href="/blog-proto/">Home <span class="sr-only">(current)</span></a>
+                <!-- <a class="nav-item nav-link" href="/blog-proto/about">Posts</a> -->
                 <a class="nav-item nav-link" href="/blog-proto/about">About</a>
                 </div>
             </div>
@@ -38,12 +40,10 @@
     </strong>
 </div>
 
-
 <div class="container-fluid post" style="background-image: url(./assets/images/posts/)"></div>
 
 <div class="container">
-    <p>dkjash
-What’s up, everyone? Happy new year, before I forget! :) Long time no post, eh? I’ve been on a trip to Brazil for the holidays, but that’s not the subject today. Let’s get on to a couple handy git tricks I used quite often these days.<!--more--></p>
+    <p>What’s up, everyone? Happy new year, before I forget! :) Long time no post, eh? I’ve been on a trip to Brazil for the holidays, but that’s not the subject today. Let’s get on to a couple handy git tricks I used quite often these days.<!--more--></p>
 
 <h3 id="reverting-the-current-branch-to-a-specific-commit">Reverting the current branch to a specific commit</h3>
 
@@ -112,9 +112,28 @@ git commit -m "Fixed .gitignore"
 
 </div>
 
-    <footer>
+<div class="container">
+    <hr>
+    <h4>Come say hi! 🙋🏻</h4>
+    
+        <div id="disqus_thread"></div>
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://anazard-me.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+    <footer class="navbar-dark bg-dark">
     <div class="container">
-        anazard.me
+        <span class="navbar-text">
+            anazard.me
+        </span>
     </div>
 </footer>
 
