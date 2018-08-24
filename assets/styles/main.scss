@@ -105,6 +105,10 @@ a:hover {
 }
 
 .post {
+  @media (max-width: 575.98px) {
+    background-size: cover;
+    background-attachment: scroll;
+  }
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   background-repeat: no-repeat;

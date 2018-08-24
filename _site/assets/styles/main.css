@@ -239,6 +239,7 @@ a:hover { text-decoration: none; }
 .btn { width: 100%; }
 
 .post { border-top: 2px solid black; border-bottom: 2px solid black; background-repeat: no-repeat; background-position: center; background-size: cover; background-attachment: fixed; height: 250px; margin: 20px 0; }
+@media (max-width: 575.98px) { .post { background-size: cover; background-attachment: scroll; } }
 
 footer { padding: 10px 0; margin-top: 50px; }
 footer .container { margin-top: 0; }
