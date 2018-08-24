@@ -1,0 +1,19 @@
+title: "Ana"
+author: "Ana Raquel Campesan"
+description: "Software Developer"
+more: "read more"
+url: "https://anazard.me"
+permalink: none
+
+sass:
+    sass_dir: assets/styles/
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge

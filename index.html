@@ -1,0 +1,33 @@
+---
+layout: base
+tags: [nofooter]
+---
+
+<div class="jumbotron landing">
+    <h4>welcome to</h4>
+    <h1>anazard.me</h1>
+    <img src="/assets/images/site/ana.png"></img>
+</div>
+<div class="container">
+    <div class="row">
+        {% for post in site.posts limit:3 %}
+            <div class="col">
+                <div class="card">
+                    <div class="card-img-wrapper" style="background-image: url(./assets/images/posts/{{ post.img }})">
+                        <!-- <img src="./assets/images/posts/{{ post.img }}"></img> -->
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">
+                                {{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 20 }}
+                        </p>
+                        <a href="{{post.url}}" class="btn btn-outline-primary">
+                            <i class="fa fa-terminal" aria-hidden="true"></i>
+                            Go to post
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
