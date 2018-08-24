@@ -2,7 +2,8 @@ title: "Ana"
 author: "Ana Raquel Campesan"
 description: "Software Developer"
 more: "read more"
-url: "https://anazard.me"
+url: https://anazard.github.io/blog-proto
+baseurl: /
 permalink: none
 
 sass:
