@@ -33,17 +33,23 @@
 </nav>
 
     <div class="container">
-    <h1>[PHP] Migrations in Laravel</h1>
-    <strong>
-        January 10, 2018 -
-        <a href="./about">@anazard</a>
-    </strong>
+    <div class="card margin-bottom-0">
+        <div class="card-body">
+            <h1>[PHP] Migrations in Laravel</h1>
+            <strong>
+                January 10, 2018 -
+                <a href="./about">@anazard</a>
+            </strong>
+        </div>
+    </div>
 </div>
 
 <div class="container-fluid post" style="background-image: url(./assets/images/posts/command-line.png)"></div>
 
-<div class="container">
-    <p>Migrations have the role of tracking all changes we need to make in our databases since the moment of its creation. It’s pretty much described by Laravel as a version control.</p>
+<div class="container margin-top-0">
+    <div class="card">
+        <div class="card-body">
+            <p>Migrations have the role of tracking all changes we need to make in our databases since the moment of its creation. It’s pretty much described by Laravel as a version control.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:migration &lt;name&gt;
 </code></pre></div></div>
@@ -151,23 +157,22 @@
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$table</span><span class="o">-&gt;</span><span class="na">timestamps</span><span class="p">();</span>
 </code></pre></div></div>
 
-</div>
+            <hr>
+            <h4>Come say hi! 🙋🏻</h4>
 
-<div class="container">
-    <hr>
-    <h4>Come say hi! 🙋🏻</h4>
-    
-        <div id="disqus_thread"></div>
-        <script>
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://anazard-me.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
+    <div id="disqus_thread"></div>
+    <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://anazard-me.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+    </div>
 </div>
 
     <footer class="navbar-dark bg-dark">

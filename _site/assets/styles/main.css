@@ -211,8 +211,6 @@
 /* Literal.Number.Integer.Long */
 body { background-color: whitesmoke; }
 
-.card { background-color: transparent; }
-
 a { color: #2f7cff; }
 
 a:hover { text-decoration: none; }
@@ -230,15 +228,20 @@ a:hover { text-decoration: none; }
 
 .landing::after { content: ''; width: 100%; height: 60px; display: block; background-image: url("../images/site/platform.png"); background-size: contain; background-repeat: repeat-x; }
 
-.card { border: none; }
+.card { border: 1px solid black; box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.5); }
+
+.margin-bottom-0 { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: none; }
+
+.margin-top-0 { margin-top: 0; }
+.margin-top-0 .card { border-top-left-radius: 0; border-top-right-radius: 0; border-top: none; }
 
 .card-title { min-height: 2em; }
 
-.card-img-wrapper { width: 286px; height: 180px; background-position: center; background-size: contain; background-repeat: no-repeat; }
+.card-img-wrapper { width: 100%; height: 180px; background-position: center; background-size: contain; background-repeat: no-repeat; }
 
 .btn { width: 100%; }
 
-.post { border-top: 2px solid black; border-bottom: 2px solid black; background-repeat: no-repeat; background-position: center; background-size: cover; background-attachment: fixed; height: 250px; margin: 20px 0; }
+.post { border-top: 1px solid black; border-bottom: 1px solid black; background-repeat: no-repeat; background-position: center; background-size: cover; background-attachment: fixed; height: 250px; }
 @media (max-width: 575.98px) { .post { background-size: cover; background-attachment: scroll; } }
 
 footer { padding: 10px 0; margin-top: 50px; }

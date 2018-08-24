@@ -3,32 +3,25 @@ layout: base
 ---
 
 <div class="container">
-    <h1>{{page.title}}</h1>
-    <strong>
-        {{ page.date | date: "%B %e, %Y" }} -
-        <a href="./about">{% if page.author %} {{page.author}}{% else %}@anazard{% endif %}</a>
-    </strong>
+    <div class="card margin-bottom-0">
+        <div class="card-body">
+            <h1>{{page.title}}</h1>
+            <strong>
+                {{ page.date | date: "%B %e, %Y" }} -
+                <a href="./about">{% if page.author %} {{page.author}}{% else %}@anazard{% endif %}</a>
+            </strong>
+        </div>
+    </div>
 </div>
 
 <div class="container-fluid post" style="background-image: url(./assets/images/posts/{{page.cover}})"></div>
 
-<div class="container">
-    {{content}}
-</div>
-
-<div class="container">
-    <hr>
-    <h4>Come say hi! 🙋🏻</h4>
-    {% if page.comments %}
-        <div id="disqus_thread"></div>
-        <script>
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://anazard-me.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    {% endif %}
+<div class="container margin-top-0">
+    <div class="card">
+        <div class="card-body">
+            {{content}}
+            <hr>
+            {% include comments.html %}
+        </div>
+    </div>
 </div>
