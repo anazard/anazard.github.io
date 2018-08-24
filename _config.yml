@@ -3,7 +3,7 @@ author: "Ana Raquel Campesan"
 description: "Software Developer"
 more: "read more"
 url: https://anazard.github.io/blog-proto
-baseurl: /
+baseurl: /blog-proto
 permalink: none
 
 sass:
