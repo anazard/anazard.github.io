@@ -4,7 +4,6 @@ comments: true
 title: "[Français] Le Subjonctif Présent"
 tags: [français, grammaire, subjonctif, présent]
 img: ['chocolatine.png']
-cover: 'montreal.jpg'
 ---
 
 On utilise le debut de la conjugaison a la troisieme personne du pluriel (ILS) pour construire le subjonctif des verbes. Il y a deux exceptions: NOUS et VOUS, qui utilisent eux memes.

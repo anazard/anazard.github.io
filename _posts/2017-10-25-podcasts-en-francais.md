@@ -4,7 +4,6 @@ comments: true
 title: "[Français] Podcasts"
 tags: [french, francais, languages, podcasts]
 thumbnail: 'chocolatine.png'
-cover: 'montreal.jpg'
 ---
 
 Salut! Comme vous deja le savez, je suis en train d'apprendre le français. C'est tout a fait une trés longue route, mais toujours amusante. Peut-etre que mon moyen préféré de pratiquer est d'ecouter des podcasts, étant donné que le listening est ma competence la plus faible en n'importe quelle langue.

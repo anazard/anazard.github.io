@@ -4,7 +4,6 @@ comments: true
 title: "[Languages] A Personal Approach"
 tags: [french, francais, languages]
 thumbnail: 'chocolatine.png'
-cover: 'montreal.jpg'
 ---
 
 Hey there! Today's topic is learning new languages. If you know me in the real life or follow me on social networks, you might know I speak English and somewhat broken French. I honestly never really cared much about English in highschool - to me, it had always been the course during which you can chat with friends and still pass doing the bare minimum effort. The tests were quite easy, so I will definitely not take credits for being able to get decent grades. A proof of that would be the simple fact I'd be screwed if a professor asked me to say something in English on the fly, no matter how simple it'd have to be.

@@ -17,7 +17,14 @@ layout: base
     </div>
 </div>
 
-<div class="container-fluid post" style="background-image: url(./assets/images/posts/{{page.cover}})"></div>
+<div class="container-fluid post"
+    {% if page.cover %}
+        style="background-image: url(./assets/images/posts/{{page.cover}}"
+    {% else %}
+        style="background-image: url(./assets/images/posts/default.jpg"
+    {% endif %}
+    >
+</div>
 
 <div class="container margin-top-0">
     <div class="card">
