@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>anazard.me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <base href="./"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/blog-proto/">Home <span class="sr-only">(current)</span></a>
+                <!-- <a class="nav-item nav-link" href="/blog-proto/about">Posts</a> -->
+                <a class="nav-item nav-link" href="/blog-proto/about">About</a>
+                </div>
+            </div>
+    </div>
+</nav>
+
+    <div class="container">
+    <div class="card margin-bottom-0">
+        <div class="card-body">
+            <h1>[Javascript] Copying text to clipboard</h1>
+            <strong>
+                <a href="./about">@anazard</a> - 
+                August 14, 2017
+                
+                    <span class="badge badge-secondary">programming</span>
+                
+                    <span class="badge badge-secondary">javascript</span>
+                
+                    <span class="badge badge-secondary">front-end</span>
+                
+                    <span class="badge badge-secondary">technology</span>
+                
+            </strong>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid post" style="background-image: url(./assets/images/posts/command-line.jpg)"></div>
+
+<div class="container margin-top-0">
+    <div class="card">
+        <div class="card-body">
+            <p>I was looking into ways to copy a given link to the clipboard upon clicking a button. JS has <strong>document.execCommand(‘copy’)</strong> for some operations of the same nature. Turns out this method only allows you to copy text that is currently selected, and you can only select text that’s in either a text input or textarea.</p>
+
+<p>The solution I came up with consists in creating a temporary input in which we could enter the text, execute the copy command and get rid of it right after.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Button --&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"secretInfo"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>secret info to be copied<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"btnCopy"</span><span class="nt">&gt;</span>Copy Hidden Info to Clipboard<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// JS function</span>
+
+<span class="kd">var</span> <span class="nx">$body</span>      <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">$btnCopy</span>   <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'btnCopy'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">secretInfo</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'secretInfo'</span><span class="p">).</span><span class="nx">innerHTML</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">copyToClipboard</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">secretInfo</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">$tempInput</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'INPUT'</span><span class="p">);</span>
+  <span class="nx">$body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">$tempInput</span><span class="p">);</span>
+  <span class="nx">$tempInput</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">'value'</span><span class="p">,</span> <span class="nx">secretInfo</span><span class="p">)</span>
+  <span class="nx">$tempInput</span><span class="p">.</span><span class="nx">select</span><span class="p">();</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">execCommand</span><span class="p">(</span><span class="s1">'copy'</span><span class="p">);</span>
+  <span class="nx">$body</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">$tempInput</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">$btnCopy</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">copyToClipboard</span><span class="p">(</span><span class="nx">secretInfo</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p><a href="https://gist.github.com/anazard/d42354f45e172519c0be3cead34fe869">This snippet on Github Gist</a></p>
+
+<p>PS: the copy buttons are dynamically generated for each row of the datatable I had on that page. This is why this snippet seems to be a bit more complex than what I showed above, but it’s just a matter of removing that logic and adapt to your use-case.</p>
+
+            <hr>
+            <h4>Come say hi! 🙋🏻</h4>
+
+    <div id="disqus_thread"></div>
+    <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://anazard-me.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+    </div>
+</div>
+
+    <footer class="navbar-dark bg-dark">
+    <div class="container">
+        <span class="navbar-text">
+            anazard.me
+        </span>
+    </div>
+</footer>
+
+</body>
+</html>

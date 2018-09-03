@@ -7,8 +7,11 @@ layout: base
         <div class="card-body">
             <h1>{{page.title}}</h1>
             <strong>
-                {{ page.date | date: "%B %e, %Y" }} -
-                <a href="./about">{% if page.author %} {{page.author}}{% else %}@anazard{% endif %}</a>
+                <a href="./about">{% if page.author %} {{page.author}}{% else %}@anazard{% endif %}</a> - 
+                {{ page.date | date: "%B %e, %Y" }}
+                {% for tag in page.tags %}
+                    <span class="badge badge-secondary">{{ tag }}</span>
+                {% endfor %}
             </strong>
         </div>
     </div>
