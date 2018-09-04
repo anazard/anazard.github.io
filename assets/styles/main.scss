@@ -184,3 +184,20 @@ nav {
 .content-wrapper-padding {
   padding-top: 55px;
 }
+
+.jump-top {
+  z-index: 20;
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  i {
+    margin: auto;
+  }
+}
