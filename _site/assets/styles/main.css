@@ -254,7 +254,8 @@ nav .nav-link:hover { background-color: rgba(47, 124, 255, 0.7); border-radius: 
 
 .navbar-expand-lg .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
 
-.navbar-brand-text { max-width: 0px; overflow-x: hidden; display: inline-block; transition: max-width 1000ms; }
+.navbar-brand-text { max-width: 0px; display: inline-block; transition: max-width 1000ms; }
+@media (min-width: 575.98px) { .navbar-brand-text { overflow-x: hidden; } }
 
 .navbar-scrolled .navbar-brand-text { max-width: 300px; transition: max-width 1000ms; }
 
