@@ -4,7 +4,7 @@ comments: true
 title: "[Javascript] Copying text to clipboard"
 tags: [programming, javascript, front-end, technology]
 img: ['js.png']
-cover: 'command-line.jpg'
+cover: 'command-line.png'
 ---
 
 I was looking into ways to copy a given link to the clipboard upon clicking a button. JS has **document.execCommand(‘copy’)** for some operations of the same nature. Turns out this method only allows you to copy text that is currently selected, and you can only select text that’s in either a text input or textarea.

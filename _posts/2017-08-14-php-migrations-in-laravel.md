@@ -4,7 +4,7 @@ comments: true
 title: "[PHP] Migrations in Laravel"
 tags: [programming, php, laravel, back-end, technology, migrations, sql, databases]
 img: ['laravel.png']
-cover: 'command-line.jpg'
+cover: 'command-line.png'
 ---
 
 Migrations have the role of tracking all changes we need to make in our databases since the moment of its creation. It’s pretty much described by Laravel as a version control.

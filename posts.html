@@ -7,18 +7,16 @@ layout: base
             <div class="card-body">
                 <h1>All posts</h1>
             </div>
-        </div>
-    </div>
-    
-    <div class="container-fluid post" style="background-image: url(./assets/images/posts/default.jpg)"></div>
-</div>
 
-<div class="container margin-top-0">
-    
-        <div class="card">
             <div class="card-body">
                 {% for post in site.posts %}
-                    <h5 class="card-title">{{ post.title }}</h5>
+                    <a href="{{ site.baseurl }}{{post.url}}">
+                        <h5>{{ post.title }}</h5>
+                    </a>
+                    <div>
+                        {{ post.excerpt | truncatewords: 30 }}
+                    </div>
+                    <hr>
                 {% endfor %}
             </div>
         </div>
