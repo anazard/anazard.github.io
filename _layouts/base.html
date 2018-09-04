@@ -18,8 +18,24 @@
 <body>
     {% include navbar.html %}
 
-    {{content}}
+    <div class="padding-top-60">
+        {{content}}
+    </div>
 
     {% include footer.html %}
+
+    <script>
+        // navbar brand text slide left
+        window.addEventListener('scroll', function() {
+            let target = document.getElementsByClassName('navbar')[0];
+            let img = document.getElementsByClassName('navbar-brand')[0];
+            // element height = target.offsetTop + target.offsetHeight;
+            if (window.scrollY > 150) {
+                target.classList.add('navbar-scrolled');
+            } else {
+                target.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -32,8 +32,10 @@ a:hover {
     -2px 2px 0 #000,
     2px 2px 0 #000; 
   color: $blue;
+  transition: font-size 400ms;
   @media (max-width: 575.98px) {
     font-size: 1.75rem;
+    transition: font-size 400ms;
   }
 }
 
@@ -46,15 +48,17 @@ a:hover {
     -2px 2px 0 #000,
     2px 2px 0 #000;
   color: #fff;
+  transition: font-size 400ms;
   @media (max-width: 575.98px) {
     font-size: 1rem;
+    transition: font-size 400ms;
   }
 }
 
 .landing {
   background-image: url('../images/site/mountain.png'), url('../images/site/cloud.png');
   background-position: bottom, top;
-  background-color: cornflowerblue;
+  background-color: #6495ED  ;
   background-attachment: scroll, fixed;
   background-size: 700px 50vh, 300px 30vh;
   background-repeat: repeat-x;
@@ -144,6 +148,24 @@ nav {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .navbar-brand {
+    font-family:'Press Start 2P', cursive;
+    img {
+      vertical-align: baseline;
+    }
+  }
+}
+
+.navbar-brand-text {
+  max-width: 0px;
+  overflow-x: hidden;
+  display: inline-block;
+  transition: max-width 1000ms;
+}
+
+.navbar-scrolled .navbar-brand-text {
+  max-width: 300px;
+  transition: max-width 1000ms;
 }
 
 .img-about {
@@ -155,6 +177,10 @@ nav {
 
 .border-none {
   border: none;
-  box-shadow: none;
+  box-shadow: none; 
   background-color: transparent;
+}
+
+.padding-top-60 {
+  padding-top: 60px;
 }

@@ -16,10 +16,13 @@
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
             <a class="navbar-brand" href="/blog-proto/">
                 <img src="./assets/images/site/brand.png" alt="">
+                <div class="navbar-brand-text">
+                        anazard.me
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,7 +37,8 @@
     </div>
 </nav>
 
-    <div class="container">
+    <div class="padding-top-60">
+        <div class="container">
     <div class="card margin-bottom-0">
         <div class="card-body">
             <h1>[Javascript] Copying text to clipboard</h1>
@@ -119,6 +123,7 @@
         </div>
     </div>
 </div>
+    </div>
 
     <footer class="navbar-dark bg-dark">
     <div class="container">
@@ -128,5 +133,19 @@
     </div>
 </footer>
 
+
+    <script>
+        // navbar brand text slide left
+        window.addEventListener('scroll', function() {
+            let target = document.getElementsByClassName('navbar')[0];
+            let img = document.getElementsByClassName('navbar-brand')[0];
+            // element height = target.offsetTop + target.offsetHeight;
+            if (window.scrollY > 150) {
+                target.classList.add('navbar-scrolled');
+            } else {
+                target.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
