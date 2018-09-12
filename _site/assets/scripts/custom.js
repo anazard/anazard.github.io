@@ -8,8 +8,7 @@ if (jumpTop) {
             scroll -= 90;
             document.body.scrollTop = document.documentElement.scrollTop = scroll;
 
-            console.log(window.scrollY);
-            if (window.scrollY == 0) {
+            if (window.scrollY <= 0) {
                 clearInterval(interval);
             }
         }, 10);
