@@ -8,6 +8,7 @@ if (jumpTop) {
             scroll -= 90;
             document.body.scrollTop = document.documentElement.scrollTop = scroll;
 
+            console.log(window.scrollY);
             if (window.scrollY == 0) {
                 clearInterval(interval);
             }
@@ -18,9 +19,11 @@ if (jumpTop) {
 window.addEventListener('scroll', function() {
     let target = document.getElementsByClassName('navbar')[0];
     if (window.scrollY > 150) { // navbar
-        target.classList.add('navbar-scrolled');
+        target.classList.add('navbar-scrolled', 'bg-dark');
+        target.classList.remove('bg-transparent');
     } else {
-        target.classList.remove('navbar-scrolled');
+        target.classList.remove('navbar-scrolled', 'bg-dark');
+        target.classList.add('bg-transparent');
     }
 
     if (jumpTop) {

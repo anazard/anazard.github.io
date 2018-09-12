@@ -24,16 +24,13 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-125251290-1');
     </script>
 </head>
 <body>
     {% include navbar.html %}
 
-    <div class="content-wrapper-padding">
         {{content}}
-    </div>
 
     {% include footer.html %}
 
