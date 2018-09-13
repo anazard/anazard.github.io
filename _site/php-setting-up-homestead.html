@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+         [PHP] Setting Up Homestead - 
+        anazard.me
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125251290-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-125251290-1');
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/blog-proto/">
+            <div class="navbar-brand-text">anazard.me</div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                
+            </div>
+
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="/blog-proto/">
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    Home
+                </a>
+                <a class="nav-item nav-link" href="/blog-proto/posts">
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    Posts
+                </a>
+                <a class="nav-item nav-link" href="/blog-proto/about">
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    About
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class="jump-top"><i class="fa fa-arrow-up"></i></div>
+
+<div class="container container-post content-wrapper-padding">
+    <div class="card margin-bottom-0">
+        <div class="card-body">
+            <h1>[PHP] Setting Up Homestead</h1>
+            <strong>
+                <a href="./about">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    
+                        anazard
+                    
+                </a> - 
+                September 13, 2018
+                
+                    <span class="badge badge-secondary">
+                        <i class="fa fa-tags" aria-hidden="true"></i>
+                        php
+                    </span>
+                
+                    <span class="badge badge-secondary">
+                        <i class="fa fa-tags" aria-hidden="true"></i>
+                        laravel
+                    </span>
+                
+                    <span class="badge badge-secondary">
+                        <i class="fa fa-tags" aria-hidden="true"></i>
+                        homestead
+                    </span>
+                
+                    <span class="badge badge-secondary">
+                        <i class="fa fa-tags" aria-hidden="true"></i>
+                        vagrant
+                    </span>
+                
+            </strong>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid post"
+    
+        style="background-image: url(./assets/images/posts/command-line.png"
+    
+    >
+</div>
+
+<div class="container container-post margin-top-0">
+    <div class="card">
+        <div class="card-body">
+            <p>On today’s post, we’re going to take a look on how to set up Homestead development environment for PHP frameworks.</p>
+
+<p>First of all, it’s important to have installed the following tools:</p>
+
+<ul>
+  <li><a href="https://www.virtualbox.org/wiki/Downloads">Virtual Box</a></li>
+  <li><a href="https://www.vagrantup.com/downloads.html">Vagrant</a></li>
+</ul>
+
+<h2 id="adding-the-homestead-vagrant-box">Adding the Homestead Vagrant Box</h2>
+
+<p>Enter <code class="highlighter-rouge">vagrant box add laravel/homestead</code> and wait for the box to be downloaded.</p>
+
+<p>Now enter <code class="highlighter-rouge">git clone https://github.com/laravel/homestead.git ~/Homestead</code> to have a copy of the Homestead repo in your home directory (that can be changed).</p>
+
+<h2 id="vagrant-settings">Vagrant Settings</h2>
+
+<p>Now that we have everything that’s necessary to get started, we’ll need to add and edit the initial Homestead.yaml file, which contains information on shared folders between the host and guest systems and projects that will be served.</p>
+
+<p>Mac and Linux users can enter <code class="highlighter-rouge">bash init.sh</code> to create the Homestead file. Open it with a text editor.</p>
+
+<p>Make sure the provider matches the one you’re using (virtualbox in my case, as the default) as in <code class="highlighter-rouge">provider: virtualbox</code>. Also include the path to your host projects folder and where it will be located in the VM. This should be enought to bring our box up for the first time.</p>
+
+<p>Enter <code class="highlighter-rouge">vagrant up</code> on the command line and wait for it to execute. It should work just fine, but if that’s not the case, we will address some common errors below.</p>
+
+<p>Remove or comment out the sites section, we will get back to it soon.</p>
+
+<p>This is what my Homestead.yaml file looks like (without comments):</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">ip</span><span class="pi">:</span> <span class="s2">"</span><span class="s">192.168.10.10"</span>
+<span class="na">memory</span><span class="pi">:</span> <span class="s">2048</span>
+<span class="na">cpus</span><span class="pi">:</span> <span class="s">1</span>
+<span class="na">provider</span><span class="pi">:</span> <span class="s">virtualbox</span>
+
+<span class="na">authorize</span><span class="pi">:</span> <span class="s">~/.ssh/id_rsa.pub</span>
+
+<span class="na">keys</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">~/.ssh/id_rsa</span>
+
+<span class="na">folders</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">map</span><span class="pi">:</span> <span class="s">~/projects</span>
+      <span class="na">to</span><span class="pi">:</span> <span class="s">/home/vagrant/projects</span>
+
+<span class="na">databases</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">homestead</span>
+</code></pre></div></div>
+
+<h2 id="editing-hosts-file-and-adding-the-first-project">Editing Hosts File and Adding the First Project</h2>
+
+<p>We’re now ready to add our first Laravel project! SSH the vm by typying <code class="highlighter-rouge">vagrant ssh</code> and cd into our shared projects folder, then type <code class="highlighter-rouge">laravel new &lt;project-name&gt;</code> to begin the instalation of the framework and its dependencies.</p>
+
+<p>CD into the newly created project folder and copy its path with <code class="highlighter-rouge">pwd</code>. Open the Homestead.yaml file again in your host OS and add the following lines:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">sites</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">map</span><span class="pi">:</span> <span class="s">myfirstproj.test</span>
+      <span class="na">to</span><span class="pi">:</span> <span class="s">&lt;paste-the-project-path-here&gt;/public</span>
+</code></pre></div></div>
+
+<p>The public directory is key here because that’s where our files are going to be served from. In my case, the path to the project’s public directory would be <code class="highlighter-rouge">/home/vagrant/projects/myproject/public</code>.</p>
+
+<p>Not much left now. Type <code class="highlighter-rouge">sudo vim /etc/hosts</code> to edit your hosts file. It is responsible for translating human-friendly hostnames into IPs, so we can access our projects by simply going to <strong>myfirstproj.test</strong> on the browser.</p>
+
+<p>Add the following lines:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Homestead Projects
+192.168.10.10  myfirstproj.test
+</code></pre></div></div>
+
+<p>Finally, we just need to restart our VM with some provisioning and the address will reflect on our project.</p>
+
+<p>Just enter <code class="highlighter-rouge">vagrant restart --provision</code> and wait.</p>
+
+<p>Try to access myfirstproj.test on the browser; you should see Laravel’s default starter page.</p>
+
+<h2 id="common-issues">Common issues</h2>
+
+<ul>
+  <li>
+    <p><strong>“No input file specified” when trying to access the page</strong></p>
+
+    <p>Make sure the path you entered in the Homestead.yaml file matches your project’s public folder in the VM.</p>
+  </li>
+  <li>
+    <p><strong>Vagrant error when mounting the folders</strong></p>
+
+    <p>It’s very likely that the projects path in your Homestead.yaml file does not exist. Make sure it’s correct and restart the VM with <code class="highlighter-rouge">vagrant restart</code>.</p>
+  </li>
+  <li>
+    <p><strong>Vagrant private key error</strong></p>
+
+    <p>You need to create a private key and add it’s path to the Homestead.yaml file. Instructions on how to do that <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">here</a>.</p>
+  </li>
+</ul>
+
+<p>On the next post, we’ll look into building the same development environment with Docker containers instead of using Vagrant and virtual machines.</p>
+
+<p>Feel free to post your questions in the comments section below!</p>
+
+            
+            
+                <hr>
+                <h4>Come say hi! 🙋🏻</h4>
+
+    <div id="disqus_thread"></div>
+    <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://anazard-me.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+            
+        </div>
+    </div>
+</div>
+
+    <footer class="navbar-dark bg-dark">
+    <div class="container">
+        <span class="navbar-text">
+            All rights reserved.
+        </span>
+    </div>
+</footer>
+
+
+    <script src="./assets/scripts/custom.js"></script>
+</body>
+</html>
