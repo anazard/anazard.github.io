@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 .highlight .hll { background-color: #49483e; }
 
-.highlighter-rouge { margin-bottom: 16px; }
+.highlighter-rouge { margin-bottom: 16px; background-color: rgba(0, 0, 0, 0.6); padding: 5px; border-radius: 2px 5px 2px 5px; color: #a6e22e; }
+.highlighter-rouge a { text-decoration: none; color: #a6e22e; }
 
 .highlight, pre { background: #272822; color: #f8f8f2; border-radius: 5px; padding: 5px; margin-bottom: 0; }
 
