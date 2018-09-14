@@ -148,6 +148,9 @@ nav {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .navbar-toggler {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
   .navbar-brand {
     font-family:'Press Start 2P', cursive;
     padding-top: 0;
@@ -164,7 +167,6 @@ nav {
   }
   .nav-link {
     color: rgba(255,255,255,.9) !important;
-    background-color: rgba(0, 0, 0, 0.1);
   }
   .nav-link:hover {
     background-color: rgba(0, 0, 0, 0.7);
@@ -173,8 +175,8 @@ nav {
 }
 
 .bg-transparent {
-    background-image: linear-gradient(rgba(0,0,0,.8), transparent);
-    background-color: transparent !important;
+     background-color: #343a40 !important;
+    background-image: url('../images/site/block.png');
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -195,6 +197,10 @@ nav {
 .navbar-scrolled .navbar-brand-text {
   max-width: 300px;
   transition: max-width 1000ms;
+}
+
+.bg-dark {
+  background-image: url('../images/site/block.png');
 }
 
 .img-about {
