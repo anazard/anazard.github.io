@@ -219,7 +219,7 @@ a:hover { text-decoration: none; }
 .container { margin-top: 20px; }
 
 .landing { background-image: url("../images/site/mountain.png"), url("../images/site/cloud.png"); background-position: bottom, top; background-color: #6495ED; background-attachment: scroll, fixed; background-size: 700px 50vh, 300px 30vh; background-repeat: repeat-x; min-height: 300px; border-radius: 0; text-align: center; padding: 100px 0 0 0; position: relative; margin-bottom: 50px; background-position-x: left; }
-.landing img { box-shadow: 0 8px rgba(0, 0, 0, 0.5); }
+.landing img { padding-top: 70px; box-shadow: 0 8px rgba(0, 0, 0, 0.5); }
 .landing h1 { font-family: 'Press Start 2P', cursive; text-shadow: 5px 5px 5px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; color: #2f7cff; transition: font-size 400ms; }
 @media (max-width: 575.98px) { .landing h1 { font-size: 1.75rem; transition: font-size 400ms; } }
 .landing h4 { font-family: 'Press Start 2P', cursive; text-shadow: 5px 5px 5px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; color: #fff; transition: font-size 400ms; }
