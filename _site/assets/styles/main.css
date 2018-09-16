@@ -249,6 +249,7 @@ footer .container { margin-top: 0; }
 nav .container { margin-top: 0; margin-bottom: 0; }
 nav .navbar-toggler { background-color: rgba(0, 0, 0, 0.7); }
 nav .navbar-brand { font-family: 'Press Start 2P', cursive; padding-top: 0; padding-bottom: 0; text-shadow: 5px 5px 5px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; }
+@media (max-width: 344px) { nav .navbar-brand { font-size: .9rem; } }
 nav .navbar-brand img { vertical-align: baseline; }
 nav .nav-link { color: rgba(255, 255, 255, 0.9) !important; }
 nav .nav-link:hover { background-color: rgba(0, 0, 0, 0.7); border-radius: 5px; }

@@ -154,6 +154,9 @@ nav {
     background-color: rgba(0, 0, 0, 0.7);
   }
   .navbar-brand {
+    @media (max-width: 344px) {
+      font-size: .9rem;
+    }
     font-family:'Press Start 2P', cursive;
     padding-top: 0;
     padding-bottom: 0;
