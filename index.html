@@ -9,41 +9,38 @@ tags: [nofooter]
     <img src="./assets/images/site/ana.png"></img>
 </div>
 <div class="container">
-    <div class="card">
-        <div class="card-body">
-            <div class="row">
-                    {% for post in site.posts limit:3 %}
-                    <div class="col-lg-4 ">
-                        <div class="card border-none">
-                            <div 
-                                class="card-img-wrapper"
-                                style="background-image: url(./assets/images/posts/{{ post.thumbnail }})"
-                            >
-                            </div>
-                            <div class="card-body">
-                                <a href="{{ site.baseurl }}{{post.url}}">
-                                    <h5 class="card-title">{{ post.title }}</h5>
-                                </a>
-                                <p class="card-text">
-                                    {{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 19 }}
-                                </p>
-                                <a href="{{ site.baseurl }}{{post.url}}" class="btn btn-outline-primary">
-                                    <i class="fa fa-terminal" aria-hidden="true"></i>
-                                    Go to post
-                                </a>
-                            </div>
-                        </div>
+    <div class="row">
+            {% for post in site.posts limit:3 %}
+            <div class="col-lg-4 ">
+                <div class="card margin-bottom-25">
+                    <div 
+                        class="card-img-wrapper"
+                        style="background-image: url(./assets/images/posts/{{ post.thumbnail }})"
+                    >
                     </div>
-                {% endfor %}
-            </div>
-
-            <div class="row">
-                <div class="col" style="text-align: center">
-                    <hr>
-                    <a href="{{site.baseurl}}/posts">
-                        <i class="fa fa-list" aria-hidden="true"></i> See all...
-                    </a>
+                    <div class="card-body">
+                        <a href="{{ site.baseurl }}{{post.url}}">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                        </a>
+                        <p class="card-text">
+                            {{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 19 }}
+                        </p>
+                        <a href="{{ site.baseurl }}{{post.url}}" class="btn btn-outline-primary">
+                            <i class="fa fa-terminal" aria-hidden="true"></i>
+                            Go to post
+                        </a>
+                    </div>
                 </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="row">
+        <div class="col" style="text-align: center;">
+            <div class="card">
+                <a href="{{site.baseurl}}/posts" class="btn btn-light">
+                    <i class="fa fa-list" aria-hidden="true"></i> See all posts...
+                </a>
             </div>
         </div>
     </div>

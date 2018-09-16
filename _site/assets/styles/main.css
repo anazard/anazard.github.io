@@ -276,3 +276,7 @@ nav .nav-link:hover { background-color: rgba(0, 0, 0, 0.7); border-radius: 5px; 
 @media (max-width: 575.98px) { .container-post { padding-left: 0; padding-right: 0; } }
 
 @media (max-width: 575.98px) { .breadcrumb { font-size: .75rem; } }
+
+.margin-bottom-25 { margin-bottom: 25px; }
+
+.btn-light { color: #2f7cff; }
