@@ -5,6 +5,7 @@
 @import 'monokai';
 
 $blue: #2f7cff;
+// $green: #43bc8a;
 
 body {
   background-color: whitesmoke;
@@ -176,7 +177,7 @@ nav {
 }
 
 .bg-transparent {
-     background-color: #343a40 !important;
+    background-color: #343a40 !important;
     background-image: url('../images/site/block.png');
 }
 
@@ -186,11 +187,10 @@ nav {
 }
 
 .navbar-brand-text {
-  @media (min-width: 575.98px) {
+  // @media (min-width: 575.98px) {
     overflow-x: hidden;
-  }
-  
-  max-width: 0px;
+  // }
+  max-width: 25px;
   display: inline-block;
   transition: max-width 1000ms;
 }
@@ -243,5 +243,11 @@ nav {
   @media (max-width: 575.98px) {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.breadcrumb {
+  @media (max-width: 575.98px) {
+    font-size: .75rem;
   }
 }

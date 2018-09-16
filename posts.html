@@ -19,6 +19,9 @@ title: Posts
 
             <div class="card-body">
                 {% for post in site.posts %}
+                    <small>
+                        {{ post.date | date: "%B %e, %Y" }}
+                    </small>
                     <a href="{{ site.baseurl }}{{post.url}}">
                         <h5>{{ post.title }}</h5>
                     </a>
