@@ -7,7 +7,7 @@ thumbnail: ['terminal.png']
 cover: ['command-line.png']
 ---
 
-I've been following [a series of Linux tutorials](https://www.youtube.com/watch?v=bju_FdCo42w&list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK) that cover most used commands, troubleshooting and everything else an experienced software developer / sysadmin should know.
+I've been following [a series of Linux tutorials](https://www.youtube.com/watch?v=bju_FdCo42w&list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK) that covers most used commands, troubleshooting and everything else an experienced software developer / sysadmin should know.
 
 This post will be updated as I watch the tutorials and take notes.
 
