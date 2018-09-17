@@ -23,7 +23,9 @@ tags: [nofooter]
                             <h5 class="card-title">{{ post.title }}</h5>
                         </a>
                         <p class="card-text">
-                            {{ post.excerpt | strip_html | truncatewords: 18 }}
+                            <div class="homepage-excerpt">
+                                {{ post.excerpt | strip_html | truncatewords: 15 }}
+                            </div>
                         </p>
                         <a href="{{ site.baseurl }}{{post.url}}" class="btn btn-outline-primary">
                             <i class="fa fa-terminal" aria-hidden="true"></i>
